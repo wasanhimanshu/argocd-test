@@ -40,6 +40,7 @@ service:
   type: NodePort
   port: 80
   nodePort: 30016
+  targetPort: 80
 
 ingress:
   enabled: false

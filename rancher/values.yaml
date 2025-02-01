@@ -75,8 +75,7 @@ ingress:
   tls:
     # options: rancher, letsEncrypt, secret
     source: rancher
-    hosts:
-      - rancher-demo.example.com
+    hosts: rancher-demo.example.com
     secretName: tls-rancher-ingress
 
 ### service ###

@@ -77,8 +77,7 @@ ingress:
     source: rancher
     secretName: tls-rancher-ingress
     hosts:
-      - rancher.example.com
-
+      - "{{ .Values.hostname }}"
 ### service ###
 # Override to use NodePort or LoadBalancer service type - default is ClusterIP
 service:

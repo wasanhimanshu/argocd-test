@@ -65,6 +65,8 @@ ingress:
   includeDefaultExtraAnnotations: true
   extraAnnotations: {}
   ingressClassName: ""
+  hosts:
+    - 'rancher.exmaple.com'
   # backend port number
   servicePort: 80
 

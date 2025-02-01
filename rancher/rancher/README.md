@@ -1,0 +1,6 @@
+**To install rancher :**
+```
+helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+kubectl create namespace cattle-system
+helm upgrade --install rancher rancher-stable/rancher --namespace cattle-system -f values.yaml
+```

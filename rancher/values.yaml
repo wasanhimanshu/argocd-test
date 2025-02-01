@@ -65,8 +65,6 @@ ingress:
   includeDefaultExtraAnnotations: true
   extraAnnotations: {}
   ingressClassName: ""
-  hosts:
-    - 'rancher.exmaple.com'
   # backend port number
   servicePort: 80
 
@@ -76,8 +74,10 @@ ingress:
 
   tls:
     # options: rancher, letsEncrypt, secret
-    source: rancher
+    source: secret
     secretName: tls-rancher-ingress
+    hosts:
+      - rancher.example.com
 
 ### service ###
 # Override to use NodePort or LoadBalancer service type - default is ClusterIP
